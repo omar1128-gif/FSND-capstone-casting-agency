@@ -10,7 +10,7 @@ database_path = f"postgresql://omar@:5432/{database_name}"
 database_url = os.environ.get('DATABASE_URL')
 
 db = SQLAlchemy()
-def setup_db(app, database_path=database_path):
+def setup_db(app, database_path=database_url):
 
     app.config["SQLALCHEMY_DATABASE_URI"] = database_url
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
