@@ -5,6 +5,7 @@ export FLASK_ENV=development
 export AUTH0_DOMAIN='dev-3l7-fwbc.eu.auth0.com'
 export ALGORITHMS=['RS256']
 export API_AUDIENCE='agency'
+export DATABASE_URL = 'postgres://euqzrhzxtwmiaj:b02e97b739735a6ecd47d187f4a19dd62d7522162d6d11ff3e2bcca156d835d6@ec2-54-146-142-58.compute-1.amazonaws.com:5432/d9lq85n4dc86nr'
 export CLIENT_ID='5FmE550Gvrv7iLRl1WxYleKWZx44su3a'
 export CLIENT_SECRET='aqlsasMbT_dbwMAwGXRnhy3-RfIBMaQoEcbvY4OEIME1bDDWPUAjIM4yKzN-CLVI'
 export API_BASE_URL='https://dev-3l7-fwbc.eu.auth0.com'
