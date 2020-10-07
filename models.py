@@ -3,15 +3,16 @@ from sqlalchemy import Column, String, Integer
 from flask_sqlalchemy import SQLAlchemy
 import json
 
-
+'''
 database_name = "casting_agency"
 database_path = f"postgresql://omar@:5432/{database_name}"
-
+'''
+database_url = os.environ.get('DATABASE_URL')
 
 db = SQLAlchemy()
 def setup_db(app, database_path=database_path):
 
-    app.config["SQLALCHEMY_DATABASE_URI"] = database_path
+    app.config["SQLALCHEMY_DATABASE_URI"] = database_url
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
     db.app = app
     db.init_app(app)
